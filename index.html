@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>
+		LOGIN
+	</title>
+	<link rel="stylesheet" href="profile.css">
+</head>
+<body id="loginBody" onload="checkSession('index');">
+	<div id="mainLoadingScreenPopUpContainer">
+		<div class="lds-hourglass"></div>
+	</div>
+	 <div id="allContentContainer">
+		<div id="mainContent">
+			<div id="loginHeaderContainer">
+				<div id="logoContainer">
+					<div id="dostLogoContainer">
+					
+					</div>
+				</div>
+				<div id="headerOtherDetailsContainer">
+					<div id="officeName">
+						Department of Science and Technology
+					</div>
+					<div id="region">
+						Regional Office I
+					</div>
+					<div id="systemNameAcronym">
+						EPM
+					</div>
+					<div id="systemAcronymMeaning">
+						EMPLOYEE PROFILE MANAGER
+					</div>
+				</div>
+				<div id="loginFormContainer">
+					<input class="loginInputs" type="text" placeholder="Username" id="username" onfocus="textInputFocus(this.id)" onblur="textInputBlur(this.id)">
+					<input class="loginInputs" type="password" placeholder="Password" id="password" onfocus="textInputFocus(this.id)" onblur="textInputBlur(this.id)">
+					<div id="loginButton" onclick="loginClicked()">
+						LOGIN
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loginFooter">
+			
+		</div>
+	 </div>
+<script src="epm.js"></script>
+</body>
+</html>
